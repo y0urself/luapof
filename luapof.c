@@ -16,6 +16,8 @@ int main(int argc, char **argv)
     //   Need access to the LuaState * variable L
     /////////////////////////////////////////////
 
+    luaL_dofile(L, "luapof.lua");
+
     // Cleanup:  Deallocate all space assocatated with the lua state */
     lua_close(L);
 
